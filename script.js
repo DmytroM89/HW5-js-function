@@ -77,5 +77,5 @@ setInterval(clockInit, 1000);
 // Toggle time format
 clock.addEventListener('click', () => {
     formatFull = !formatFull;
-    clockInit(); // вызываем ф-цию сразу, чтобы не ждать
+    clockInit(); // вызываем ф-цию сразу, чтобы не ждать setInterval
 });
