@@ -8,17 +8,11 @@
         h4 {
             margin-bottom: .5rem;
         }
-        .clock.short .sec{
-            display: none;
+        .clock {
+            max-width: 70px;
         }
-        .clock,
-        .clock span {
-            display: flex;
-            align-items: center;
-        }
-        .clock span:not(:first-child)::before {
-            content: ':';
-            display: flex;
+        .clock:hover {
+            cursor: pointer;
         }
         button {
             margin-top: 1rem;
@@ -27,12 +21,7 @@
 </head>
 <body>
 <h4>Часы</h4>
-<div class="clock" id="clock">
-    <span class="hour" id="hour">00</span>
-    <span class="min" id="min">00</span>
-    <span class="sec" id="sec">00</span>
-</div>
-<button type="button" onclick="changeFormat()">Full | Short</button>
+<div class="clock" id="clock">00:00:00</div>
 
 <script src="script.js"></script>
 </body>
